@@ -1,0 +1,242 @@
+/* 引数 */
+$bk-color: white;
+$common-font-color: #0F1111;
+/* ======================================= */
+/* ボディーの設定 */
+img {
+    width: 100%;
+}
+
+h2 img {
+    height: 3rem;
+    width: auto;
+}
+
+body {
+    font-size: 14px;
+    background-color: $bk-color;
+    color: $common-font-color;
+
+    p {
+        line-height: 1.5;
+        margin-bottom: .5rem;
+    }
+
+    .outer {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+/* ======================================= */
+main {
+    margin-top: 3rem;
+    max-width: 850px;
+    padding: 0 2rem 0;
+    margin: 0 auto;
+
+    section {
+            margin: 5rem 0;
+
+            .inner {
+                margin: 1rem 0;
+            }
+    }
+}
+/* ======================================= */
+/* フッター */
+footer {
+    .insta-image {
+        width: 50px;
+        margin: 3rem auto;
+      }
+}/* footer終了 */
+/* ======================================= */
+/* ヘッダーのCSS */
+#header-navigation {
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            padding: .5rem;
+            transition: .5s;
+            font-weight: 600;
+
+            &:hover {
+                transform: translateY(-.1rem);
+            }
+
+            a {
+                text-decoration: none;
+                font-size: initial;
+                color: initial;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+/* ======================================= */
+.page-introduction {
+    width: 80%;
+    @media screen and (max-width : 480px) {
+            width: 90%;
+    }
+    margin: 3rem auto;
+    ul {
+        list-style-type: square;
+        padding: 1rem;
+    }
+}/* .page-introduction 終了 */
+
+/* ======================================= */
+#sms1 {
+    img {
+        width: 100%;
+    }
+
+}
+/* ======================================= */
+#sms2 {
+    li {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        @media screen and(max-width:480px) {
+            margin-top:1rem;
+        }
+    }
+
+    .flex-wrap-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex-item-about {
+        width: 48%;
+        @media screen and(max-width:480px){
+            width: 100%;
+        }
+    }
+
+    .h3div {
+        margin-top: 2rem;
+    }
+
+    .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        li {
+            width: 24%;
+            @media screen and(max-width:480px){
+                width: 49%;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .dis-b {
+        display: block;
+        margin: .5rem 0;
+
+        &::before {
+            content: "◆";
+        }
+    }
+}
+/* ======================================= */
+#sms3 {
+    .flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .photo-flex-item {
+            width:49%;
+            @media screen and(max-width:480px) {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}
+/* ======================================= */
+/* ボタン類 */
+main {
+
+    .contact-button {
+        text-align: center;
+        margin: 3rem;
+
+        p {
+            margin: 1rem 0;
+        }
+
+        button {
+            padding: .5rem 1.5rem .5rem 1.5rem;
+            background-color: #4a3a35;
+            border-radius: 5px;
+            transition: .3s;
+            box-shadow: 1px 1px 5px;
+            &:hover {
+                transform: translate(0, -1px);
+                box-shadow: 0px 2px 8px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+    }
+
+}
+/* ======================================= */
+.modoru-button {
+    position: fixed;
+    left: 90%;
+    bottom: 1%;
+
+    img {
+    width: 30px;
+    height: auto;
+    }
+
+    a {
+        display: block;
+    }
+
+    p {
+        font-size: .5rem;
+        text-align: center;
+    }
+}
+/* ======================================= */
+.top-image {
+    &.pc {
+        display: block;
+        @media screen and(max-width:480px) {
+            display: none;
+        }
+    }
+
+    &.sp {
+        display: none;
+        @media screen and(max-width:480px) {
+            display: block;
+        }
+    }
+}

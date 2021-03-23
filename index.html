@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content=”noindex”>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/anime.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/s-scroll.js"></script>
+    <title>トップページ|morimotoポートフォリオ</title>
+</head>
+<body class="sa">
+    <div class="outer">
+        <div class="modoru-button">
+            <a href="#sms1"><img src="images/modoru.png" alt=""></a>
+            <p>topへ</p>
+        </div>
+        <header id="sms1">
+            <div class="top-image pc"><img src="images/prof-top.png" alt="morimotoのポートフォリオ"></div>
+            <div class="top-image sp"><img src="images/prof-top-sp.png" alt="morimotoのポートフォリオ"></div>
+            <nav id="header-navigation">
+                <ul>
+                    <li><a href="#sms1">HOME</a></li>
+                    <li><a href="#sms2">ABOUT</a></li>
+                    <li><a href="#sms3">PHOTO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="sms2">
+                <h2 class="sa"><img src="images/midasi-about.gif" alt="ABOUT 僕について"></h2>
+                <div class="flex-wrap-about">
+                    <div class="flex-item-about sa sa-lr">
+                        <img src="images/face.jpg" alt="">
+                    </div><!-- prof-image -->
+                    <ul class="flex-item-about">
+                        <li class="sa sa--down">
+                            2015年<br>某家電量販店で販売職、マネジメント職、経理を経験。
+                            <span class="dis-b">新入社員 新人の部表彰</span>
+                            <span class="dis-b">マネジメント 部門表彰</span>
+                        </li>
+                        <li class="sa sa--down">2019年<br>web制作に興味を持ち職業訓練でフロントエンドの基礎を学ぶ。</li>
+                        <li class="sa sa--down">2020年現在<br>ECサイト営業部にてページコンテンツ制作担当として勤務。</li>
+                    </ul>
+                </div><!-- flex-wrap -->
+                <div class="h3div">
+                    <h3>制作SKILL</h3>
+                    <ul class="skill-list sa sa--up">
+                        <li>
+                            <div class="icon-image"><img src="images/htmlicon.png" alt=""></div>
+                            <p>HTML5</p>
+                        </li>
+                        <li>
+                            <div class="icon-image"><img src="images/css3icon.png" alt=""></div>
+                            <p>CSS/SCSS</p>
+                        </li>
+                        <li>
+                            <div class="icon-image"><img src="images/psicon.png" alt=""></div>
+                            <p>Photoshop</p>
+                        </li>
+                        <li>
+                            <div class="icon-image"><img src="images/pricon.png" alt=""></div>
+                            <p>Premiere Pro</p>
+                        </li>
+                    </ul>
+                    <p>HTML,CSSなどでのページ制作から、画像、動画コンテンツの制作が可能です。</p>
+                    <p>ライティングについてもSEO対策込でのコンテンツ制作でロングテールキーワードにおいて上位5位をコミットしております。</p>
+                </div><!-- h3div -->
+            </section>
+            <section id="sms3">
+                <h2 class="sa"><img src="images/midasi-photo.gif" alt="PHOTO 写真"></h2>
+                <div class="flex-wrap">
+                    <div class="photo-flex-item sa">
+                        <img src="images/photo-flower.jpg" alt="morimotoのポートフォリオ">
+                    </div><!-- photo-flex-item -->
+                    <div class="photo-flex-item sa">
+                        <img src="images/photo-botanical.jpg" alt="morimotoのポートフォリオ">
+                    </div><!-- photo-flex-item -->
+                    <div class="photo-flex-item sa">
+                        <img src="images/photos-piano.jpg" alt="morimotoのポートフォリオ">
+                    </div><!-- photo-flex-item -->
+                    <div class="photo-flex-item sa">
+                        <img src="images/photo-road.jpg" alt="morimotoのポートフォリオ">
+                    </div><!-- photo-flex-item -->
+                    <div class="photo-flex-item sa">
+                        <img src="images/photo-dog.jpg" alt="morimotoのポートフォリオ">
+                    </div><!-- photo-flex-item -->
+                    <div class="photo-flex-item sa">
+                        <img src="images/photo-cat.jpg" alt="morimotoのポートフォリオ">
+                    </div><!-- photo-flex-item -->
+                </div><!-- flex-wrap -->
+                <p>なんとなく撮影できればいいという妥協はしたくなく一眼の撮影方法についての知見を広めるべく、フォトマスター検定を取得しました。</p>
+                <p>悪条件の撮影や加工などにも対応できます。</p>
+
+            </section>
+        </main>
+        <footer>
+            <p style="text-align: center;">©2021 morimoto</p>
+        </footer>
+    </div><!-- /outer -->
+
+
+<script>
+    var scrollAnimationElm = document.querySelectorAll('.sa');
+    var scrollAnimationFunc = function() {
+    for(var i = 0; i < scrollAnimationElm.length; i++) {
+        var triggerMargin = 300;
+        if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+        scrollAnimationElm[i].classList.add('show');
+        }
+    }
+    }
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
+</script>
+
+</body>
+</html>
+
+<!--
+タグ構造メモ
+outer>wrapper>container>inner>contents
+ -->

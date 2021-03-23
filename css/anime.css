@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.sa {
+opacity: 0;
+transition: all 1s ease;
+}
+
+.sa.show {
+opacity: 1;
+transform: none;
+}
+.sa--lr {
+transform: translate(-100px, 0);
+}
+.sa--rl {
+transform: translate(100px, 0);
+}
+.sa--up {
+transform: translate(0, 100px);
+}
+.sa--down {
+transform: translate(0, -100px);
+}
+.sa--scaleUp {
+transform: scale(.5);
+}
+.sa--scaleDown {
+transform: scale(1.5);
+}
+.sa--rotateL {
+transform: rotate(180deg);
+}
+.sa--rotateR {
+transform: rotate(-180deg);
+}
+
+
+/* 参考 http://noze.space/archives/415 */
+
+/*
+.sa–lr
+左から右にフェードイン
+.sa–rl
+右から左にフェードイン
+.sa–up
+下から上にフェードイン
+.sa–down
+上から下にフェードイン
+.sa–scaleUp
+縮小した状態から拡大しながらフェードイン
+.sa–scaleDown
+拡大した状態から縮小しながらフェードイン
+.sa–rotateL
+左に回転しながらフェードイン
+.sa–rotateR
+右に回転しながらフェードイン
+*/

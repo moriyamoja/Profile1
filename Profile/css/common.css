@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* 引数 */
+/* ======================================= */
+/* ボディーの設定 */
+img {
+  width: 100%;
+}
+
+h2 img {
+  height: 3rem;
+  width: auto;
+}
+
+body {
+  font-size: 14px;
+  background-color: white;
+  color: #0F1111;
+}
+
+body p {
+  line-height: 1.5;
+  margin-bottom: .5rem;
+}
+
+body .outer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ======================================= */
+main {
+  margin-top: 3rem;
+  max-width: 850px;
+  padding: 0 2rem 0;
+  margin: 0 auto;
+}
+
+main section {
+  margin: 5rem 0;
+}
+
+main section .inner {
+  margin: 1rem 0;
+}
+
+/* ======================================= */
+/* フッター */
+footer .insta-image {
+  width: 50px;
+  margin: 3rem auto;
+}
+
+/* footer終了 */
+/* ======================================= */
+/* ヘッダーのCSS */
+#header-navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header-navigation ul li {
+  padding: .5rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 600;
+}
+
+#header-navigation ul li:hover {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+}
+
+#header-navigation ul li a {
+  text-decoration: none;
+  font-size: initial;
+  color: initial;
+}
+
+#header-navigation ul li a:hover {
+  cursor: pointer;
+}
+
+/* ======================================= */
+.page-introduction {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 480px) {
+  .page-introduction {
+    width: 90%;
+  }
+}
+
+.page-introduction ul {
+  list-style-type: square;
+  padding: 1rem;
+}
+
+/* .page-introduction 終了 */
+/* ======================================= */
+#sms1 img {
+  width: 100%;
+}
+
+/* ======================================= */
+#sms2 li {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  #sms2 ul {
+    margin-top: 1rem;
+  }
+}
+
+#sms2 .flex-wrap-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#sms2 .flex-item-about {
+  width: 48%;
+}
+
+@media screen and (max-width: 480px) {
+  #sms2 .flex-item-about {
+    width: 100%;
+  }
+}
+
+#sms2 .h3div {
+  margin-top: 2rem;
+}
+
+#sms2 .skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#sms2 .skill-list li {
+  width: 24%;
+}
+
+@media screen and (max-width: 480px) {
+  #sms2 .skill-list li {
+    width: 49%;
+  }
+}
+
+#sms2 .skill-list li p {
+  text-align: center;
+}
+
+#sms2 .dis-b {
+  display: block;
+  margin: .5rem 0;
+}
+
+#sms2 .dis-b::before {
+  content: "◆";
+}
+
+/* ======================================= */
+#sms3 .flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#sms3 .flex-wrap .photo-flex-item {
+  width: 49%;
+}
+
+@media screen and (max-width: 480px) {
+  #sms3 .flex-wrap .photo-flex-item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ======================================= */
+/* ボタン類 */
+main .contact-button {
+  text-align: center;
+  margin: 3rem;
+}
+
+main .contact-button p {
+  margin: 1rem 0;
+}
+
+main .contact-button button {
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  background-color: #4a3a35;
+  border-radius: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 1px 1px 5px;
+          box-shadow: 1px 1px 5px;
+}
+
+main .contact-button button:hover {
+  -webkit-transform: translate(0, -1px);
+          transform: translate(0, -1px);
+  -webkit-box-shadow: 0px 2px 8px;
+          box-shadow: 0px 2px 8px;
+}
+
+main .contact-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* ======================================= */
+.modoru-button {
+  position: fixed;
+  left: 90%;
+  bottom: 1%;
+}
+
+.modoru-button img {
+  width: 30px;
+  height: auto;
+}
+
+.modoru-button a {
+  display: block;
+}
+
+.modoru-button p {
+  font-size: .5rem;
+  text-align: center;
+}
+
+/* ======================================= */
+.top-image.pc {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .top-image.pc {
+    display: none;
+  }
+}
+
+.top-image.sp {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .top-image.sp {
+    display: block;
+  }
+}
+/*# sourceMappingURL=common.css.map */
